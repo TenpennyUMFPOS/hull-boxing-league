@@ -1,0 +1,36 @@
+.title {
+    font-family: var(--primary-font-text);
+    color: var(--secondary-text-color);
+    text-shadow: 2px 2px var(--fourth-text-color);
+    font-weight: 900 !important;
+    align-self: center;
+    font-size: 55px;
+
+
+}
+
+.Pholder>p {
+    font-family: var(--primary-font-text);
+    color: var(--primary-text-color);
+    font-size: 50px;
+    align-self: center;
+}
+
+.Pholder {
+    align-self: center;
+    width: 53%;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.SABA {
+    color: var(--third-text-color);
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+
+}

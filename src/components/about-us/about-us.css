@@ -1,0 +1,27 @@
+.aboutCont {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.threeElems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.assos {
+    font-family: 'Ms Madi', cursive;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffd700;
+}
+
+.sean>img {
+    height: 400px;
+}
