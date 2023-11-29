@@ -8,7 +8,7 @@
     margin-top: 4rem;
 }
 
-.navbar {
+.hnavbar {
     position: fixed;
     top: -2rem;
     left: 0;
@@ -21,7 +21,7 @@
     background-color: var(--primary-color-bg);
 }
 
-.nav-Items {
+.hnav-Items {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,14 +29,14 @@
     margin-left: 20%;
 }
 
-.nav-Items>a {
+.hnav-Items>a {
     font-family: var(--primary-font-text);
-    color: var(--primary-text-color);
+    color: var(--primary-text-color) !important;
 }
 
-.nav-Items>a:hover {
+.hnav-Items>a:hover {
     cursor: pointer;
-    color: var(--third-text-color);
+    color: var(--third-text-color) !important;
 }
 
 

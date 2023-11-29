@@ -59,13 +59,13 @@ function MainPage() {
             </motion.div>
             {scrolling && (
                 <motion.div
-                    className="navbar"
+                    className="hnavbar"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.3 }}
                 >
                     <img className="nav-logo" src={Logo2} alt="" />
-                    <div className="nav-Items">{navItems}</div>
+                    <div className="hnav-Items">{navItems}</div>
                     <button className="str-btn"> Start now</button>
                 </motion.div>
             )}
