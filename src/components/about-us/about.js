@@ -10,7 +10,7 @@ function About() {
     const [cRef, cInView] = useInView();
 
     return (
-        <div className="aboutCont">
+        <div className="aboutCont" id="about">
             <h1 className="assos">Assossiation led by The hulldor Family and Sean Gvardia</h1>
             <div className="threeElems">
                 <motion.div

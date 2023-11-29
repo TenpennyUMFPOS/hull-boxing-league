@@ -3,7 +3,7 @@ import './intro.css';
 
 function Intro() {
     return (
-        <div className="introContainer">
+        <div className="introContainer" id='intro'>
             <h1 className='title'> INTRODUCTION</h1>
             <div className='Pholder'>
                 <p>Step into the world of champions and become the boxing legend you've always aspired to be.

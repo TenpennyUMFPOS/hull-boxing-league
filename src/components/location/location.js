@@ -17,7 +17,7 @@ const Location = () => {
     };
 
     return (
-        <div className='loc-cont'>
+        <div className='loc-cont' id='location'>
             <img className={`toreno ${isTorenoVisible ? 'visible' : ''}`} src={Toreno} alt='Toreno' />
             <div className='loc'>
                 <h1 className='title'>Come say hi At Ganton Gym</h1>

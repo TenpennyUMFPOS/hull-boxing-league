@@ -6,7 +6,7 @@ import './contact-us.css';
 
 function ContactUs() {
     return (
-        <div className='introContainer cnt'>
+        <div className='introContainer cnt' id='contacts'>
             <h1 className='title'>Contact us</h1>
             <div className='cnct-us'>
                 <div className='disc-icon'>
