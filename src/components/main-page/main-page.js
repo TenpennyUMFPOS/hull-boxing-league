@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 import Logo from '../../assets/images/hull-main-page.png';
 import Logo2 from '../../assets/images/logo-nav.png';
 import './main-page.css';
-
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import HullCarousel from './constants/carousel';
 const sections = [
     { id: 'intro', name: 'INTRODUCTION' },
     { id: 'about', name: 'ABOUT US' },
@@ -12,7 +14,33 @@ const sections = [
     { id: 'contacts', name: 'CONTACT US' },
 ];
 
+function StartNowModal(props) {
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            className='startNowModal'
+        >
+
+            <Modal.Body className='startNowModalBody'>
+                <HullCarousel />
+            </Modal.Body>
+            <Modal.Footer className='modal-footer'>
+                <button className='str-btn btn-mdl' onClick={props.onHide}>Close</button>
+            </Modal.Footer>
+        </Modal>
+    );
+}
+
 function MainPage() {
+
+
+    /* Start now Modal */
+    const [modalShow, setModalShow] = React.useState(false);
+
+
     const [scrolling, setScrolling] = useState(false);
     const controls = useAnimation();
 
@@ -66,9 +94,10 @@ function MainPage() {
                 >
                     <img className="nav-logo" src={Logo2} alt="" />
                     <div className="hnav-Items">{navItems}</div>
-                    <button className="str-btn"> Start now</button>
+                    <button onClick={() => setModalShow(true)} className="str-btn"> Start now</button>
                 </motion.div>
             )}
+            <StartNowModal show={modalShow} onHide={() => setModalShow(false)} />
         </div>
     );
 }
