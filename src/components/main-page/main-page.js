@@ -7,6 +7,7 @@ import './main-page.css';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import HullCarousel from './constants/carousel';
+import { BrowserRouter } from 'react-router-dom';
 const sections = [
     { id: 'intro', name: 'INTRODUCTION' },
     { id: 'about', name: 'ABOUT US' },
@@ -15,6 +16,8 @@ const sections = [
 ];
 
 function StartNowModal(props) {
+
+
     return (
         <Modal
             {...props}
@@ -28,7 +31,7 @@ function StartNowModal(props) {
                 <HullCarousel />
             </Modal.Body>
             <Modal.Footer className='modal-footer'>
-                <button className='str-btn btn-mdl' onClick={props.onHide}>Close</button>
+                <button className='str-btn btn-mdl' onClick={props.onHide}><a style={{ textDecoration: 'none', color: 'black' }} href='/underDev'>LogIn</a></button>
             </Modal.Footer>
         </Modal>
     );
