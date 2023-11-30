@@ -31,7 +31,7 @@ function StartNowModal(props) {
                 <HullCarousel />
             </Modal.Body>
             <Modal.Footer className='modal-footer'>
-                <button className='str-btn btn-mdl' onClick={props.onHide}><a style={{ textDecoration: 'none', color: 'black' }} href='/underDev'>LogIn</a></button>
+                <a style={{ textDecoration: 'none', color: 'black' }} href='/underDev'> <button className='str-btn btn-mdl' onClick={props.onHide}>LogIn</button></a>
             </Modal.Footer>
         </Modal>
     );
