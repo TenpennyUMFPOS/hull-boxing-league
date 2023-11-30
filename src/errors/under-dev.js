@@ -6,7 +6,9 @@ function UnderDev() {
             <div className="aboutCont " style={{ marginTop: '1rem' }}>
                 <div className="Pholder">
                     <img src={underDev}></img>
-                    <p > This Feature is still under development visit out discord from more information.</p>
+                    <p >
+                        This Feature is still under development visit out <a href="https://discord.gg/ZKHzXNhh" target='_blank' rel='noopener noreferrer'>Discord </a>
+                        from more information.</p>
                 </div>
             </div>
         </>
