@@ -8,7 +8,7 @@ function UnderDev() {
                     <img src={underDev}></img>
                     <p >
                         This Feature is still under development visit out <a href="https://discord.gg/ZKHzXNhh" target='_blank' rel='noopener noreferrer'>Discord </a>
-                        from more information.</p>
+                        for more information.</p>
                 </div>
             </div>
         </>
