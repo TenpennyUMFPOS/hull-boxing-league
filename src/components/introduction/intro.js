@@ -5,6 +5,7 @@ function Intro() {
     return (
         <div className="introContainer" id='intro'>
             <h1 className='title'> INTRODUCTION</h1>
+        <p>  Mohamed BOUTHOURI</p>
             <div className='Pholder'>
                 <p>Step into the world of champions and become the boxing legend you've always aspired to be.
                     At the <span className='SABA'>San Andreas Boxing Association</span> we're more than just a league we're a thriving community of fighters,
